@@ -3,9 +3,7 @@ class Names:
         self.reversed_names = []
 
     def add(self, name):
-        to_lower_case = name.lower()
-        reverse_and_title = to_lower_case[::-1].title()
-        self.reversed_names.append(reverse_and_title)
+        return self.reversed_names.append(name[::-1].title())
 
 
 names = Names()
